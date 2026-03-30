@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Shield, Code, Flag, Network } from "lucide-react";
+import { Shield, Code, Flag, Network, Palette, Search } from "lucide-react";
 
 const categories = [
   {
@@ -22,6 +22,16 @@ const categories = [
     title: "Network Engineering",
     skills: ["Network Security", "Routing & Switching", "Firewalls & IDS/IPS", "Wireshark & Packet Analysis", "Network Automation", "VPN & Tunneling", "Cloud Networking"],
   },
+  {
+    icon: Palette,
+    title: "Graphics Design",
+    skills: ["Adobe Photoshop", "Adobe Illustrator", "Figma / UI Design", "Branding & Identity", "Social Media Graphics", "Print & Digital Media", "Motion Graphics"],
+  },
+  {
+    icon: Search,
+    title: "Digital Forensics",
+    skills: ["Disk & Memory Forensics", "Evidence Acquisition", "Chain of Custody", "Log Analysis", "File Carving", "Timeline Analysis", "Forensic Reporting"],
+  },
 ];
 
 const SkillsSection = () => {
@@ -40,7 +50,7 @@ const SkillsSection = () => {
           </h2>
           <div className="w-20 h-0.5 bg-primary mb-10 glow-primary" />
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {categories.map((cat, i) => (
               <motion.div
                 key={cat.title}
