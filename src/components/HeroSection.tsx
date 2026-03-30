@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowDown, FileText, BookOpen, Shield, Code, Network, Trophy } from "lucide-react";
+import { ArrowDown, FileText, BookOpen, Shield, Code, Network, Trophy, Palette, Search } from "lucide-react";
 import profileImg from "@/assets/profile.jpg";
 
 const titles = [
@@ -9,6 +9,8 @@ const titles = [
   "Web Developer",
   "CTF Player",
   "Network Engineer",
+  "Graphics Designer",
+  "Digital Forensics Analyst",
   "CEO — Heptacorenet Technologies",
 ];
 
@@ -17,6 +19,8 @@ const highlights = [
   { icon: Code, label: "Web Development", detail: "Full-stack applications & secure coding" },
   { icon: Network, label: "Network Engineering", detail: "Architecture, firewalls & automation" },
   { icon: Trophy, label: "CTF Competitor", detail: "Web exploitation, crypto & reverse engineering" },
+  { icon: Palette, label: "Graphics Design", detail: "Branding, UI/UX & visual storytelling" },
+  { icon: Search, label: "Digital Forensics", detail: "Evidence analysis, incident investigation" },
 ];
 
 const HeroSection = () => {
@@ -182,7 +186,7 @@ const HeroSection = () => {
             </div>
 
             {/* Highlight Cards */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
               {highlights.map((item, i) => (
                 <motion.div
                   key={item.label}
