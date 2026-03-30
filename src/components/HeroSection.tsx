@@ -47,8 +47,8 @@ const HeroSection = () => {
       {/* Hero Content */}
       <div className="relative z-10 container mx-auto px-4 pt-28 pb-16 flex flex-col min-h-screen">
         {/* Top Hero */}
-        <div className="flex-1 flex items-center">
-          <div className="w-full grid md:grid-cols-[280px_1fr] gap-10 lg:gap-16 items-center">
+        <div className="flex-1 flex items-center justify-center">
+          <div className="w-full flex flex-col items-center text-center">
             {/* Profile Image */}
             <motion.div
               initial={{ opacity: 0, scale: 0.85 }}
