@@ -14,6 +14,7 @@ const navLinks = [
 ];
 
 const Header = () => {
+  const { theme, toggleTheme } = useTheme();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
 
