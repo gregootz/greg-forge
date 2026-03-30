@@ -186,7 +186,7 @@ const HeroSection = () => {
             </div>
 
             {/* Highlight Cards */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
               {highlights.map((item, i) => (
                 <motion.div
                   key={item.label}
