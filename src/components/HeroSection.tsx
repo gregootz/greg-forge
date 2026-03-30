@@ -24,12 +24,16 @@ const HeroSection = () => {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Grid background */}
-      <div className="absolute inset-0 grid-bg opacity-40" />
-      <div className="absolute inset-0 scanline pointer-events-none" />
+      {/* Profile background */}
+      <div className="absolute inset-0">
+        <img src={profileImg} alt="" className="w-full h-full object-cover object-top" />
+        <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-background/40" />
+      </div>
 
-      {/* Radial glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-primary/5 blur-[120px]" />
+      {/* Grid background */}
+      <div className="absolute inset-0 grid-bg opacity-20" />
+      <div className="absolute inset-0 scanline pointer-events-none" />
 
       <div className="relative z-10 container mx-auto px-4 text-center">
         <motion.div
