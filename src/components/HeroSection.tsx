@@ -19,6 +19,8 @@ const highlights = [
   { icon: Code, label: "Web Development", detail: "Full-stack applications & secure coding" },
   { icon: Network, label: "Network Engineering", detail: "Architecture, firewalls & automation" },
   { icon: Trophy, label: "CTF Competitor", detail: "Web exploitation, crypto & reverse engineering" },
+  { icon: Palette, label: "Graphics Design", detail: "Branding, UI/UX & visual storytelling" },
+  { icon: Search, label: "Digital Forensics", detail: "Evidence analysis, incident investigation" },
 ];
 
 const HeroSection = () => {
