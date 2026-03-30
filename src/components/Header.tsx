@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Shield } from "lucide-react";
+import { Menu, X, Shield, Sun, Moon } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useTheme } from "@/components/ThemeProvider";
 
 const navLinks = [
   { label: "Home", href: "#home" },

@@ -49,51 +49,54 @@ const HeroSection = () => {
         {/* Top Hero */}
         <div className="flex-1 flex items-center justify-center">
           <div className="w-full flex flex-col items-center text-center">
-            {/* Profile Image */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.85 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="relative mx-auto"
-            >
-              <div className="w-56 h-56 md:w-72 md:h-72 rounded-2xl overflow-hidden border-2 border-primary/30 glow-primary">
-                <img
-                  src={profileImg}
-                  alt="Gregory George Machiwa"
-                  className="w-full h-full object-cover object-top"
-                />
-              </div>
-              <div className="absolute -inset-2 rounded-2xl bg-primary/10 blur-2xl -z-10" />
-              {/* Status badge */}
+            {/* Profile + Name row */}
+            <div className="flex flex-col md:flex-row items-center gap-6 md:gap-10 mb-6">
+              {/* Profile Image */}
               <motion.div
-                initial={{ opacity: 0, x: -10 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 1, duration: 0.5 }}
-                className="absolute -bottom-3 -right-3 glass-card rounded-full px-3 py-1.5 border border-primary/30"
+                initial={{ opacity: 0, scale: 0.85 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="relative shrink-0"
               >
-                <span className="flex items-center gap-1.5 text-xs font-mono">
-                  <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-                  <span className="text-primary">Available</span>
-                </span>
+                <div className="w-40 h-40 md:w-52 md:h-52 rounded-2xl overflow-hidden border-2 border-primary/30 glow-primary">
+                  <img
+                    src={profileImg}
+                    alt="Gregory George Machiwa"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                <div className="absolute -inset-2 rounded-2xl bg-primary/10 blur-2xl -z-10" />
+                {/* Status badge */}
+                <motion.div
+                  initial={{ opacity: 0, x: -10 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 1, duration: 0.5 }}
+                  className="absolute -bottom-3 -right-3 glass-card rounded-full px-3 py-1.5 border border-primary/30"
+                >
+                  <span className="flex items-center gap-1.5 text-xs font-mono">
+                    <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
+                    <span className="text-primary">Available</span>
+                  </span>
+                </motion.div>
               </motion.div>
-            </motion.div>
 
-            {/* Intro Text */}
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-center"
-            >
-              <p className="font-mono text-primary text-sm mb-4 tracking-widest uppercase">
-                &gt; initializing portfolio...
-              </p>
-
-              <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4">
-                <span className="text-foreground">Gregory George</span>
-                <br />
-                <span className="text-gradient-primary">Machiwa</span>
-              </h1>
+              {/* Name + title */}
+              <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="text-center md:text-left"
+              >
+                <p className="font-mono text-primary text-sm mb-3 tracking-widest uppercase">
+                  &gt; initializing portfolio...
+                </p>
+                <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-2">
+                  <span className="text-foreground">Gregory George</span>
+                  <br />
+                  <span className="text-gradient-primary">Machiwa</span>
+                </h1>
+              </motion.div>
+            </div>
 
               <div className="h-8 mb-6 flex items-center justify-center">
                 <span className="font-mono text-muted-foreground text-lg">{"// "}</span>
