@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowDown, FileText, BookOpen, Shield, Code, Network, Trophy } from "lucide-react";
+import { ArrowDown, FileText, BookOpen, Shield, Code, Network, Trophy, Palette, Search } from "lucide-react";
 import profileImg from "@/assets/profile.jpg";
 
 const titles = [
