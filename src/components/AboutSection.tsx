@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Shield, Code, Network, Trophy } from "lucide-react";
+import profileImg from "@/assets/profile.jpg";
 
 const highlights = [
   { icon: Shield, label: "Red Teaming", detail: "Attack surface enumeration & exploit dev" },
