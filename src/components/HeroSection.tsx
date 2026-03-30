@@ -83,7 +83,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-center md:text-left"
+              className="text-center"
             >
               <p className="font-mono text-primary text-sm mb-4 tracking-widest uppercase">
                 &gt; initializing portfolio...
