@@ -109,7 +109,7 @@ const HeroSection = () => {
                 <span className="w-0.5 h-5 bg-primary ml-1 animate-blink border-r-2 border-primary" />
               </div>
 
-              <p className="font-body text-muted-foreground text-lg md:text-xl max-w-2xl mb-8">
+              <p className="font-body text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-8">
                 "Breaking, Building, Securing — One packet at a time."
               </p>
 
