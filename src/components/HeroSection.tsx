@@ -95,7 +95,7 @@ const HeroSection = () => {
                 <span className="text-gradient-primary">Machiwa</span>
               </h1>
 
-              <div className="h-8 mb-6 flex items-center justify-center md:justify-start">
+              <div className="h-8 mb-6 flex items-center justify-center">
                 <span className="font-mono text-muted-foreground text-lg">{"// "}</span>
                 <motion.span
                   key={titleIndex}
