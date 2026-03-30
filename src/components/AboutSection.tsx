@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Shield, Code, Network, Trophy } from "lucide-react";
+import profileImg from "@/assets/profile.jpg";
 
 const highlights = [
   { icon: Shield, label: "Red Teaming", detail: "Attack surface enumeration & exploit dev" },
@@ -23,7 +24,25 @@ const AboutSection = () => {
           </h2>
           <div className="w-20 h-0.5 bg-primary mb-10 glow-primary" />
 
-          <div className="grid md:grid-cols-2 gap-12 items-start">
+          <div className="grid md:grid-cols-[300px_1fr] gap-12 items-start">
+            {/* Profile Image */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="relative mx-auto md:mx-0"
+            >
+              <div className="w-64 h-64 md:w-72 md:h-72 rounded-lg overflow-hidden border border-border/50 glow-primary">
+                <img
+                  src={profileImg}
+                  alt="Gregory George Machiwa"
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              <div className="absolute -inset-1 rounded-lg bg-primary/10 blur-xl -z-10" />
+            </motion.div>
+
             <div className="space-y-5">
               <p className="text-muted-foreground leading-relaxed font-body">
                 I'm <span className="text-foreground font-semibold">Gregory George Machiwa</span>, a
