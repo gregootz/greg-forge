@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Shield, Code, Flag, Network } from "lucide-react";
+import { Shield, Code, Flag, Network, Palette, Search } from "lucide-react";
 
 const categories = [
   {
@@ -21,6 +21,16 @@ const categories = [
     icon: Network,
     title: "Network Engineering",
     skills: ["Network Security", "Routing & Switching", "Firewalls & IDS/IPS", "Wireshark & Packet Analysis", "Network Automation", "VPN & Tunneling", "Cloud Networking"],
+  },
+  {
+    icon: Palette,
+    title: "Graphics Design",
+    skills: ["Adobe Photoshop", "Adobe Illustrator", "Figma / UI Design", "Branding & Identity", "Social Media Graphics", "Print & Digital Media", "Motion Graphics"],
+  },
+  {
+    icon: Search,
+    title: "Digital Forensics",
+    skills: ["Disk & Memory Forensics", "Evidence Acquisition", "Chain of Custody", "Log Analysis", "File Carving", "Timeline Analysis", "Forensic Reporting"],
   },
 ];
 
