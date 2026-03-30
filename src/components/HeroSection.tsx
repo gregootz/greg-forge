@@ -9,6 +9,8 @@ const titles = [
   "Web Developer",
   "CTF Player",
   "Network Engineer",
+  "Graphics Designer",
+  "Digital Forensics Analyst",
   "CEO — Heptacorenet Technologies",
 ];
 
