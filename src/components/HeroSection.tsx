@@ -54,7 +54,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, scale: 0.85 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="relative mx-auto md:mx-0"
+              className="relative mx-auto"
             >
               <div className="w-56 h-56 md:w-72 md:h-72 rounded-2xl overflow-hidden border-2 border-primary/30 glow-primary">
                 <img
