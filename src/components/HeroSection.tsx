@@ -47,14 +47,14 @@ const HeroSection = () => {
       {/* Hero Content */}
       <div className="relative z-10 container mx-auto px-4 pt-28 pb-16 flex flex-col min-h-screen">
         {/* Top Hero */}
-        <div className="flex-1 flex items-center">
-          <div className="w-full grid md:grid-cols-[280px_1fr] gap-10 lg:gap-16 items-center">
+        <div className="flex-1 flex items-center justify-center">
+          <div className="w-full flex flex-col items-center text-center">
             {/* Profile Image */}
             <motion.div
               initial={{ opacity: 0, scale: 0.85 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="relative mx-auto md:mx-0"
+              className="relative mx-auto"
             >
               <div className="w-56 h-56 md:w-72 md:h-72 rounded-2xl overflow-hidden border-2 border-primary/30 glow-primary">
                 <img
@@ -83,7 +83,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-center md:text-left"
+              className="text-center"
             >
               <p className="font-mono text-primary text-sm mb-4 tracking-widest uppercase">
                 &gt; initializing portfolio...
@@ -95,7 +95,7 @@ const HeroSection = () => {
                 <span className="text-gradient-primary">Machiwa</span>
               </h1>
 
-              <div className="h-8 mb-6 flex items-center justify-center md:justify-start">
+              <div className="h-8 mb-6 flex items-center justify-center">
                 <span className="font-mono text-muted-foreground text-lg">{"// "}</span>
                 <motion.span
                   key={titleIndex}
@@ -109,11 +109,11 @@ const HeroSection = () => {
                 <span className="w-0.5 h-5 bg-primary ml-1 animate-blink border-r-2 border-primary" />
               </div>
 
-              <p className="font-body text-muted-foreground text-lg md:text-xl max-w-2xl mb-8">
+              <p className="font-body text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-8">
                 "Breaking, Building, Securing — One packet at a time."
               </p>
 
-              <div className="flex flex-wrap gap-4 justify-center md:justify-start">
+              <div className="flex flex-wrap gap-4 justify-center">
                 <Button variant="neon" size="lg" asChild>
                   <a href="#projects">
                     <ArrowDown className="mr-2 h-4 w-4" />
