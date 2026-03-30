@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowDown, FileText, BookOpen } from "lucide-react";
+import profileImg from "@/assets/profile.jpg";
 
 const titles = [
   "Red Teamer",
