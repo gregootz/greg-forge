@@ -113,7 +113,7 @@ const HeroSection = () => {
                 "Breaking, Building, Securing — One packet at a time."
               </p>
 
-              <div className="flex flex-wrap gap-4 justify-center md:justify-start">
+              <div className="flex flex-wrap gap-4 justify-center">
                 <Button variant="neon" size="lg" asChild>
                   <a href="#projects">
                     <ArrowDown className="mr-2 h-4 w-4" />
