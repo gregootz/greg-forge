@@ -38,8 +38,8 @@ const HeroSection = () => {
       {/* Background layers */}
       <div className="absolute inset-0">
         <img src={profileImg} alt="" className="w-full h-full object-cover object-top" />
-        <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/50" />
+        <div className="absolute inset-0 bg-background/70 backdrop-blur-sm" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-background/40" />
       </div>
       <div className="absolute inset-0 grid-bg opacity-20" />
       <div className="absolute inset-0 scanline pointer-events-none" />
